@@ -27,7 +27,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${imFell.variable} ${dancing.variable}`}>
+    <head>
+        <meta charSet="UTF-8"/>
+        <meta property="og:image" content="<generated>"/>
+        <meta property="og:image:type" content="<generated>"/>
+        <meta property="og:image:width" content="<generated>"/>
+        <meta property="og:image:height" content="<generated>"/>
+    </head>
+    <body className={`${inter.variable} ${imFell.variable} ${dancing.variable}`}>
         {children}
       </body>
     </html>

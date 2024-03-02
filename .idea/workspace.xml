@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214c794d-d620-42af-a27e-96ac32c1744c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <updated>1709344573397</updated>
       <workItem from="1709344574638" duration="3180000" />
       <workItem from="1709347935499" duration="8716000" />
-      <workItem from="1709411176976" duration="9493000" />
+      <workItem from="1709411176976" duration="10396000" />
     </task>
     <servers />
   </component>
