@@ -13,13 +13,6 @@ import {
     CardHeader, CardList,
     CardTitle
 } from "@/components/ui/card";
-import {
-    Alert,
-    AlertDescription,
-    AlertTitle
-} from "@/components/ui/alert"
-
-
 
 export default function Home() {
     return (

@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214c794d-d620-42af-a27e-96ac32c1744c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/church.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/divider2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/double-check.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/reception.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/star.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/aspect-ratio.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="214c794d-d620-42af-a27e-96ac32c1744c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +83,7 @@
       <updated>1709344573397</updated>
       <workItem from="1709344574638" duration="3180000" />
       <workItem from="1709347935499" duration="8716000" />
-      <workItem from="1709411176976" duration="8676000" />
+      <workItem from="1709411176976" duration="9020000" />
     </task>
     <servers />
   </component>
