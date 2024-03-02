@@ -1,7 +1,23 @@
-import { Inter } from "next/font/google";
+import { Inter, IM_Fell_English, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"]
+});
+
+const imFell = IM_Fell_English({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: '--font-imFell',
+});
+
+const dancing = Dancing_Script({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: '--font-dancing',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +27,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${imFell.variable} ${dancing.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
