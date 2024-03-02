@@ -1,25 +1,42 @@
-import Image from "next/image";
-import Countdown from "@/components/Countdown";
 
+import Image from "next/image";
+import Link from "next/link"
+import Countdown from "@/components/Countdown";
+import churchImage from '../../public/church.svg'
+import receptionImage from '../../public/reception.svg'
+
+import { Button } from "@/components/ui/button"
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
-    CardHeader,
+    CardHeader, CardList,
     CardTitle
 } from "@/components/ui/card";
+import {
+    Alert,
+    AlertDescription,
+    AlertTitle
+} from "@/components/ui/alert"
+
+
 
 export default function Home() {
     return (
-        <main className="flex flex-col min-h-screen">
+        <main
+            style={{
+                backgroundImage: "url('/background.png')",
+                backgroundSize: 'contain',
+                backgroundPosition: 'center'
+            }}
+            className="flex flex-col min-h-screen">
             <section
                 style={{
                     backgroundImage: "url('/background.png')",
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
                     backgroundPosition: 'center'
                 }}
-                className="flex h-screen flex-col py-10 px-2 justify-between">
+                className="flex h-screen flex-col py-10 px-2 justify-evenly">
                 <Image
                     src="/foto-banner.png"
                     alt="Lulú y Gil"
@@ -35,73 +52,213 @@ export default function Home() {
             </section>
             <section className="flex flex-col h-dvh justify-evenly px-5">
                 <Image
-                    src="/divider2.png"
-                    alt="Lulú y Gil"
+                    src="/divider2.svg"
+                    alt="Divider"
                     width={700}
                     height={700}
-                    className="transform rotate-180 mx-auto"
+                    className="mx-auto"
                 />
                 <p className="text-center font-im-fell text-2xl">El amor es un secreto que los ojos no saben guardar, y
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
                     celebración por nuestra:</p>
-                <p className="text-center font-dancing text-7xl text-gold mx-auto font-bold">Boda de Oro</p>
+                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">Boda de Oro</p>
             </section>
             <section className="flex flex-col h-fit items-center px-5 my-5 gap-16">
-                <Image
-                    src="/wedding-date.gif"
-                    alt="Lulú"
-                    width={124}
-                    height={124}
-                    unoptimized={true}
-                />
-                <p className="text-center font-dancing text-7xl text-gold mx-auto">Fecha</p>
-                <p className="text-center font-im-fell text-6xl text-alabaster-800 mx-auto">19 | abril | 2024</p>
-                <Countdown/>
-            </section>
-            <section className="flex flex-col h-fit items-center px-5 my-5 gap-16 border-4 border-alabaster-600">
-                <Image
-                    src="/church.png"
-                    alt="Lulú y Gil"
-                    width={700}
-                    height={700}
-                    className="mx-auto"
-                />
-                <p className="text-center font-im-fell text-2xl">Ceremonia Religiosa en:</p>
-                <p className="text-center font-dancing text-3xl text-gold mx-auto">Templo de la Inmaculada Concepción de
-                    San Diego de Alcalá</p>
-                <p className="text-center font-im-fell text-2xl">Rivero y Gutiérrez 101-A, Zona Centro, 20000
-                    Aguascalientes; Ags. 19:00 Hrs.</p>
-
-            </section>
-            <section className="flex flex-col h-screen items-center px-5">
-                <Image
-                    src="/church.png"
-                    alt="Lulú y Gil"
-                    width={700}
-                    height={700}
-                    className="mx-auto"
-                />
                 <Card>
                     <CardHeader>
                         <Image
-                            src="/church.png"
+                            src="/wedding-date.gif"
                             alt="Lulú y Gil"
-                            width={800}
-                            height={800}
-                            className="mx-auto rounded-t-lg"
+                            width={124}
+                            height={124}
+                            unoptimized={true}
                         />
-                        <br/>
-                        <CardTitle>Ceremonia Religiosa en:</CardTitle>
+                        <CardTitle>Fecha:</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-center font-dancing text-3xl text-gold">Templo de la Inmaculada Concepción de San Diego de Alcalá</p>
-                        <p className="text-center font-im-fell text-2xl">Rivero y Gutiérrez 101-A, Zona Centro, 20000 Aguascalientes; Ags.</p>
+                        <p className="text-center font-dancing text-3xl text-gold">19 | abril | 2024</p>
                     </CardContent>
                     <CardFooter>
-                        <p className="font-im-fell text-2xl">19:00 Hrs.</p>
+                        <Countdown/>
                     </CardFooter>
                 </Card>
+            </section>
+            <section className="flex flex-col gap-16 my-10">
+                <Image
+                    src={churchImage}
+                    alt="Lulú y Gil"
+                    className="w-full"
+                />
+                <div className="px-5">
+                    <Card>
+                        <CardHeader>
+                            <Image
+                                src="/arch.gif"
+                                alt="Arco de boda"
+                                width={124}
+                                height={124}
+                                unoptimized={true}
+                            />
+                            <CardTitle>Ceremonia Religiosa en:</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-center font-dancing text-3xl text-gold-700 ">Templo de la Inmaculada
+                                Concepción de San Diego de Alcalá</p>
+                            <p className="text-center font-im-fell text-2xl">Rivero y Gutiérrez 101-A, Zona Centro,
+                                20000 Aguascalientes; Ags.</p>
+                        </CardContent>
+                        <CardFooter>
+                            <p className="font-im-fell text-2xl">19:00 Hrs.</p>
+                            <Button asChild>
+                                <Link href={"https://maps.app.goo.gl/bA2gt28jB5Es6YbX7"}>
+                                    <Image
+                                        src="/location-pin.gif"
+                                        alt="Pin de localización"
+                                        width={25}
+                                        height={25}
+                                        unoptimized={true}
+                                    />
+                                    Ver Mapa
+                                </Link>
+                            </Button>
+                        </CardFooter>
+                    </Card>
+                </div>
+            </section>
+            <section className="flex flex-col gap-16 my-10">
+                <Image
+                    src={receptionImage}
+                    alt="Recepción"
+                    className="w-full"
+                />
+                <div className="px-5">
+                    <Card>
+                        <CardHeader>
+                            <Image
+                                src="/fireworks.gif"
+                                alt="Lulú y Gil"
+                                width={124}
+                                height={124}
+                                unoptimized={true}
+                            />
+                            <CardTitle>
+                                Recepción en:
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-center font-dancing text-3xl text-gold-700 ">
+                                Salón de Banquetes "S.U.T.E.R.M."
+                            </p>
+                            <p className="text-center font-im-fell text-2xl">
+                                Av. Aguascalientes Ote. 2865, Ojocaliente, 20196 Aguascalientes, Ags.
+                            </p>
+                        </CardContent>
+                        <CardFooter>
+                            <p className="font-im-fell text-2xl">20:30 Hrs.</p>
+                            <Button asChild>
+                                <Link href={"https://maps.app.goo.gl/txAtmBz9bRkiEwum6"}>
+                                    <Image
+                                        src="/map.gif"
+                                        alt="Lulú y Gil"
+                                        width={25}
+                                        height={25}
+                                        unoptimized={true}
+                                    />
+                                    Ver Mapa
+                                </Link>
+                            </Button>
+                        </CardFooter>
+                    </Card>
+                </div>
+            </section>
+            <section className="flex flex-col h-fit items-center px-5 my-5 gap-16">
+                <Image
+                    src="/divider2.svg"
+                    alt="Divider"
+                    width={700}
+                    height={700}
+                    className="mx-auto"
+                />
+                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">
+                    Confirmanos tu asistencia
+                </p>
+                <p className="text-center text-2xl font-im-fell">
+                    Para nosotros será muy importante contar con su compañia, para eso pedimos su confirmación de su
+                    asistencia en el link siguiente:
+                </p>
+                <Button asChild>
+                    <Link
+                        href={"https://api.whatsapp.com/send/?phone=5214491038784&text=Estaremos+encantados+de+asistir+a+las+Boda+de+Oro+de+Lul%C3%BA+y+Gil.&type=phone_number&app_absent=0"}>
+                        <Image
+                            src="/double-check.gif"
+                            alt="Lulú y Gil"
+                            width={25}
+                            height={25}
+                            unoptimized={true}
+                        />
+                        Confirmar Asistencia
+                    </Link>
+                </Button>
+                <Card>
+                    <CardHeader>
+                        <Image
+                            src="/star.gif"
+                            alt="Invitación"
+                            width={124}
+                            height={124}
+                            unoptimized={true}
+                        />
+                        <CardTitle>
+                            <p className="text-center font-dancing text-5xl text-gold-default">
+                                Recomendaciones:
+                            </p>
+                        </CardTitle>
+                    </CardHeader>
+                    <CardList>
+                        <ul className="text-2xl">
+                            <li>
+                                <div className="flex items-center my-5 gap-5">
+                                    <Image
+                                        src="/table.gif"
+                                        alt="Invitación"
+                                        width={24}
+                                        height={24}
+                                        unoptimized={true}
+                                    />
+                                    <span>No se sirven alimentos después de las 21:30 HRS</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex items-center my-5 gap-5">
+                                    <Image
+                                        src="/tuxedo.gif"
+                                        alt="Invitación"
+                                        width={24}
+                                        height={24}
+                                        unoptimized={true}
+                                    />
+                                    <span>Vestimenta Elegante Formal</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex items-center my-5 gap-5">
+                                    <Image
+                                        src="/tickets.gif"
+                                        alt="Invitación"
+                                        width={24}
+                                        height={24}
+                                        unoptimized={true}
+                                    />
+                                    <span>Entrada a la recepción con riguroso boleto</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </CardList>
+                </Card>
+                <p className="text-center font-dancing text-5xl text-gold-default my-10">
+                    Contamos con su presencia!
+                </p>
             </section>
         </main>
     );
