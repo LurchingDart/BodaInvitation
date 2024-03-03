@@ -45,7 +45,7 @@ export default function Countdown() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center m-2">
             <MessageCountdown message={message}/>
             <TimerContainer
                 days={days}

@@ -22,11 +22,11 @@ const TimerContainer = ({ days, hours, minutes, seconds }) => {
     return (
         <div className="flex flex-row gap-1 my-5">
             <NumberBox num={days} unit="Días"/>
-            <span className=" text-5xl font-normal">:</span>
+            <span className="text-luxor-gold-600 text-5xl font-normal">:</span>
             <NumberBox num={hours} unit="Horas"/>
-            <span className=" text-5xl font-normal">:</span>
+            <span className="text-luxor-gold-600 text-5xl font-normal">:</span>
             <NumberBox num={minutes} unit="Minutos"/>
-            <span className=" text-5xl font-normal">:</span>
+            <span className="text-luxor-gold-600 text-5xl font-normal">:</span>
             <NumberBox num={seconds} unit="Segundos"/>
         </div>
     );
