@@ -18,34 +18,34 @@ export default function Home() {
     return (
         <main
             style={{
-                backgroundImage: "url('/background.png')",
-                backgroundSize: 'contain',
+                backgroundImage: "url('/background.svg')",
+                backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}
-            className="flex flex-col min-h-screen">
+            className="flex flex-col min-h-screen items-center">
             <section
-                style={{
-                    backgroundImage: "url('/background.png')",
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center'
-                }}
-                className="flex h-screen flex-col py-10 px-2 justify-evenly">
+                className="flex h-screen flex-col py-10 px-2 justify-evenly items-center md:my-24">
                 <Image
                     src="/foto-banner.png"
                     alt="Lulú y Gil"
                     width={500}
                     height={500}
                 />
-                <Image
-                    src="/text-invitation.png"
-                    alt="Lulú y Gil"
-                    width={700}
-                    height={700}
-                />
+                <div className="flex flex-col text-center gap-5">
+                    <p className="font-im-fell">
+                        ANUNCIANDO LA BODA DE ORO DE
+                    </p>
+                    <p className="font-im-fell text-7xl">
+                        Lulú y Gil
+                    </p>
+                    <p className="font-im-fell">
+                        DIECINUEVE DE ABRIL DEL DOS MIL VEINTICUATRO
+                    </p>
+                </div>
             </section>
             <section className="flex flex-col h-dvh justify-evenly px-5">
                 <Image
-                    src="/divider2.svg"
+                    src="/divider3.svg"
                     alt="Divider"
                     width={700}
                     height={700}
@@ -55,26 +55,21 @@ export default function Home() {
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
                     celebración por nuestra:</p>
-                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">Boda de Oro</p>
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">Boda de Oro</p>
             </section>
-            <section className="flex flex-col h-fit items-center px-5 my-5 gap-16">
+            <section className="flex flex-col h-fit items-center m-5 gap-16">
                 <Card>
                     <CardHeader>
                         <Image
-                            src="/wedding-date.gif"
+                            src="/calendar-heart.png"
                             alt="Lulú y Gil"
                             width={124}
                             height={124}
-                            unoptimized={true}
+                            className="my-5"
                         />
                         <CardTitle>Fecha:</CardTitle>
                     </CardHeader>
-                    <CardContent>
-                        <p className="text-center font-dancing text-3xl text-gold">19 | abril | 2024</p>
-                    </CardContent>
-                    <CardFooter>
-                        <Countdown/>
-                    </CardFooter>
+                    <Countdown/>
                 </Card>
             </section>
             <section className="flex flex-col gap-16 my-10">
@@ -87,30 +82,33 @@ export default function Home() {
                     <Card>
                         <CardHeader>
                             <Image
-                                src="/arch.gif"
+                                src="/church.png"
                                 alt="Arco de boda"
                                 width={124}
                                 height={124}
-                                unoptimized={true}
+                                className="my-5"
                             />
                             <CardTitle>Ceremonia Religiosa en:</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-center font-dancing text-3xl text-gold-700 ">Templo de la Inmaculada
-                                Concepción de San Diego de Alcalá</p>
+                            <p className="text-center font-dancing text-3xl text-luxor-gold-600 ">
+                                Templo de la Inmaculada Concepción de San Diego de Alcalá
+                            </p>
                             <p className="text-center font-im-fell text-2xl">Rivero y Gutiérrez 101-A, Zona Centro,
                                 20000 Aguascalientes; Ags.</p>
                         </CardContent>
                         <CardFooter>
                             <p className="font-im-fell text-2xl">19:00 Hrs.</p>
                             <Button asChild>
-                                <Link href={"https://maps.app.goo.gl/bA2gt28jB5Es6YbX7"}>
+                                <Link
+                                    href={"https://maps.app.goo.gl/bA2gt28jB5Es6YbX7"}
+                                    className="gap-3"
+                                >
                                     <Image
-                                        src="/location-pin.gif"
+                                        src="/map-marker.png"
                                         alt="Pin de localización"
                                         width={25}
                                         height={25}
-                                        unoptimized={true}
                                     />
                                     Ver Mapa
                                 </Link>
@@ -129,18 +127,18 @@ export default function Home() {
                     <Card>
                         <CardHeader>
                             <Image
-                                src="/fireworks.gif"
-                                alt="Lulú y Gil"
+                                src="/glass-cheers.png"
+                                alt="Copas de brindis"
                                 width={124}
                                 height={124}
-                                unoptimized={true}
+                                className="my-5"
                             />
                             <CardTitle>
                                 Recepción en:
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-center font-dancing text-3xl text-gold-700 ">
+                            <p className="text-center font-dancing text-3xl text-luxor-gold-600 ">
                                 Salón de Banquetes "S.U.T.E.R.M."
                             </p>
                             <p className="text-center font-im-fell text-2xl">
@@ -150,13 +148,15 @@ export default function Home() {
                         <CardFooter>
                             <p className="font-im-fell text-2xl">20:30 Hrs.</p>
                             <Button asChild>
-                                <Link href={"https://maps.app.goo.gl/txAtmBz9bRkiEwum6"}>
+                                <Link
+                                    href={"https://maps.app.goo.gl/txAtmBz9bRkiEwum6"}
+                                    className="gap-3"
+                                >
                                     <Image
-                                        src="/map.gif"
-                                        alt="Lulú y Gil"
+                                        src="/map-marker.png"
+                                        alt="Pin de localización"
                                         width={25}
                                         height={25}
-                                        unoptimized={true}
                                     />
                                     Ver Mapa
                                 </Link>
@@ -167,13 +167,13 @@ export default function Home() {
             </section>
             <section className="flex flex-col h-fit items-center px-5 my-5 gap-16">
                 <Image
-                    src="/divider2.svg"
+                    src="/divider3.svg"
                     alt="Divider"
                     width={700}
                     height={700}
-                    className="mx-auto"
+                    className="mx-auto transform rotate-180"
                 />
-                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">
                     Confirmanos tu asistencia
                 </p>
                 <p className="text-center text-2xl font-im-fell">
@@ -182,13 +182,15 @@ export default function Home() {
                 </p>
                 <Button asChild>
                     <Link
-                        href={"https://api.whatsapp.com/send/?phone=5214491038784&text=Estaremos+encantados+de+asistir+a+las+Boda+de+Oro+de+Lul%C3%BA+y+Gil.&type=phone_number&app_absent=0"}>
+                        href={"https://api.whatsapp.com/send/?phone=5214491038784&text=Estaremos+encantados+de+asistir+a+las+Boda+de+Oro+de+Lul%C3%BA+y+Gil.&type=phone_number&app_absent=0"}
+                        className="gap-3"
+                    >
                         <Image
-                            src="/double-check.gif"
-                            alt="Lulú y Gil"
+                            src="/whatsapp.png"
+                            alt="WhatsApp Logo"
                             width={25}
                             height={25}
-                            unoptimized={true}
+
                         />
                         Confirmar Asistencia
                     </Link>
@@ -196,14 +198,14 @@ export default function Home() {
                 <Card>
                     <CardHeader>
                         <Image
-                            src="/star.gif"
-                            alt="Invitación"
+                            src="/star.png"
+                            alt="Estrella de brillo"
                             width={124}
                             height={124}
-                            unoptimized={true}
+                            className="my-5"
                         />
                         <CardTitle>
-                            <p className="text-center font-dancing text-5xl text-gold-default">
+                            <p className="text-center font-dancing text-5xl text-luxor-gold-600">
                                 Recomendaciones:
                             </p>
                         </CardTitle>
@@ -213,11 +215,10 @@ export default function Home() {
                             <li>
                                 <div className="flex items-center my-5 gap-5">
                                     <Image
-                                        src="/table.gif"
-                                        alt="Invitación"
+                                        src="/restaurant.png"
+                                        alt="Cubiertos de restaurante"
                                         width={24}
                                         height={24}
-                                        unoptimized={true}
                                     />
                                     <span>No se sirven alimentos después de las 21:30 HRS</span>
                                 </div>
@@ -225,11 +226,10 @@ export default function Home() {
                             <li>
                                 <div className="flex items-center my-5 gap-5">
                                     <Image
-                                        src="/tuxedo.gif"
-                                        alt="Invitación"
+                                        src="/shirt.png"
+                                        alt="Camisa de vestir"
                                         width={24}
                                         height={24}
-                                        unoptimized={true}
                                     />
                                     <span>Vestimenta Elegante Formal</span>
                                 </div>
@@ -237,11 +237,10 @@ export default function Home() {
                             <li>
                                 <div className="flex items-center my-5 gap-5">
                                     <Image
-                                        src="/tickets.gif"
-                                        alt="Invitación"
+                                        src="/ticket.png"
+                                        alt="Ticket de entrada"
                                         width={24}
                                         height={24}
-                                        unoptimized={true}
                                     />
                                     <span>Entrada a la recepción con riguroso boleto</span>
                                 </div>
@@ -249,7 +248,7 @@ export default function Home() {
                         </ul>
                     </CardList>
                 </Card>
-                <p className="text-center font-dancing text-5xl text-gold-default my-10">
+                <p className="text-center font-dancing text-5xl text-luxor-gold-600 my-10">
                     Contamos con su presencia!
                 </p>
             </section>
