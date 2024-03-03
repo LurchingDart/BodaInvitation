@@ -18,18 +18,13 @@ export default function Home() {
     return (
         <main
             style={{
-                backgroundImage: "url('/background.png')",
-                backgroundSize: 'contain',
+                backgroundImage: "url('/background.svg')",
+                backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}
-            className="flex flex-col min-h-screen">
+            className="flex flex-col min-h-screen items-center">
             <section
-                style={{
-                    backgroundImage: "url('/background.png')",
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center'
-                }}
-                className="flex h-screen flex-col py-10 px-2 justify-evenly">
+                className="flex h-screen flex-col py-10 px-2 justify-evenly items-center md:my-24">
                 <Image
                     src="/foto-banner.png"
                     alt="Lulú y Gil"
@@ -55,7 +50,7 @@ export default function Home() {
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
                     celebración por nuestra:</p>
-                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">Boda de Oro</p>
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">Boda de Oro</p>
             </section>
             <section className="flex flex-col h-fit items-center px-5 my-5 gap-16">
                 <Card>
@@ -70,11 +65,8 @@ export default function Home() {
                         <CardTitle>Fecha:</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-center font-dancing text-3xl text-gold">19 | abril | 2024</p>
-                    </CardContent>
-                    <CardFooter>
                         <Countdown/>
-                    </CardFooter>
+                    </CardContent>
                 </Card>
             </section>
             <section className="flex flex-col gap-16 my-10">
@@ -96,8 +88,9 @@ export default function Home() {
                             <CardTitle>Ceremonia Religiosa en:</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-center font-dancing text-3xl text-gold-700 ">Templo de la Inmaculada
-                                Concepción de San Diego de Alcalá</p>
+                            <p className="text-center font-dancing text-3xl text-luxor-gold-600 ">
+                                Templo de la Inmaculada Concepción de San Diego de Alcalá
+                            </p>
                             <p className="text-center font-im-fell text-2xl">Rivero y Gutiérrez 101-A, Zona Centro,
                                 20000 Aguascalientes; Ags.</p>
                         </CardContent>
@@ -140,7 +133,7 @@ export default function Home() {
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-center font-dancing text-3xl text-gold-700 ">
+                            <p className="text-center font-dancing text-3xl text-luxor-gold-600 ">
                                 Salón de Banquetes "S.U.T.E.R.M."
                             </p>
                             <p className="text-center font-im-fell text-2xl">
@@ -173,7 +166,7 @@ export default function Home() {
                     height={700}
                     className="mx-auto"
                 />
-                <p className="text-center font-dancing text-7xl text-gold-default mx-auto font-bold">
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">
                     Confirmanos tu asistencia
                 </p>
                 <p className="text-center text-2xl font-im-fell">
@@ -203,7 +196,7 @@ export default function Home() {
                             unoptimized={true}
                         />
                         <CardTitle>
-                            <p className="text-center font-dancing text-5xl text-gold-default">
+                            <p className="text-center font-dancing text-5xl text-luxor-gold-600">
                                 Recomendaciones:
                             </p>
                         </CardTitle>
@@ -249,7 +242,7 @@ export default function Home() {
                         </ul>
                     </CardList>
                 </Card>
-                <p className="text-center font-dancing text-5xl text-gold-default my-10">
+                <p className="text-center font-dancing text-5xl text-luxor-gold-600 my-10">
                     Contamos con su presencia!
                 </p>
             </section>
