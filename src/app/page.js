@@ -55,7 +55,7 @@ export default function Home() {
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
                     celebración por nuestra:</p>
-                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">BodaS de Oro</p>
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">Bodas de Oro</p>
             </section>
             <section className="flex flex-col h-fit items-center m-5 gap-16">
                 <Card>
