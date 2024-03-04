@@ -33,7 +33,7 @@ export default function Home() {
                 />
                 <div className="flex flex-col text-center gap-5">
                     <p className="font-im-fell">
-                        ANUNCIANDO LA BODA DE ORO DE
+                        ANUNCIANDO LAS BODAS DE ORO DE
                     </p>
                     <p className="font-im-fell text-7xl">
                         Lulú y Gil
@@ -55,7 +55,7 @@ export default function Home() {
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
                     celebración por nuestra:</p>
-                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">Boda de Oro</p>
+                <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">BodaS de Oro</p>
             </section>
             <section className="flex flex-col h-fit items-center m-5 gap-16">
                 <Card>
@@ -174,7 +174,7 @@ export default function Home() {
                     className="mx-auto transform rotate-180"
                 />
                 <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">
-                    Confirmanos tu asistencia
+                    Confirmación Asistencia
                 </p>
                 <p className="text-center text-2xl font-im-fell">
                     Para nosotros será muy importante contar con su compañia, para eso pedimos su confirmación de su
@@ -243,6 +243,19 @@ export default function Home() {
                                         height={24}
                                     />
                                     <span>Entrada a la recepción con riguroso boleto</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex items-center my-5 gap-5">
+                                    <Image
+                                        src="/child-head.png"
+                                        alt="Niño"
+                                        width={24}
+                                        height={24}
+                                    />
+                                    <span>
+                                        No se permite la entrada de niños
+                                    </span>
                                 </div>
                             </li>
                         </ul>
