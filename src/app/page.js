@@ -54,7 +54,7 @@ export default function Home() {
                 <p className="text-center font-im-fell text-2xl">El amor es un secreto que los ojos no saben guardar, y
                     seguimos mirándonos igual 50 años después.</p>
                 <p className="text-center font-im-fell text-2xl">Hoy tenemos el placer de invitarles a nuestra
-                    celebración por nuestra:</p>
+                    celebración por nuestras:</p>
                 <p className="text-center font-dancing text-7xl text-luxor-gold-600 mx-auto font-bold">Bodas de Oro</p>
             </section>
             <section className="flex flex-col h-fit items-center m-5 gap-16">
@@ -254,7 +254,7 @@ export default function Home() {
                                         height={24}
                                     />
                                     <span>
-                                        No se permite la entrada de niños
+                                        No niños
                                     </span>
                                 </div>
                             </li>
