@@ -32,7 +32,7 @@ export default function Home() {
                     height={500}
                 />
                 <div className="flex flex-col text-center gap-5">
-                    <p className="font-im-fell">
+                    <p className="font-im-fell text-luxor-gold-600">
                         ANUNCIANDO LAS BODAS DE ORO DE
                     </p>
                     <p className="font-im-fell text-7xl">
@@ -69,7 +69,7 @@ export default function Home() {
                         />
                         <CardTitle>Fecha:</CardTitle>
                     </CardHeader>
-                    <Countdown/>
+                    <Countdown />
                 </Card>
             </section>
             <section className="flex flex-col gap-16 my-10">
