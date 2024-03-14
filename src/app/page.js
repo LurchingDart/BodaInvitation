@@ -35,7 +35,7 @@ export default function Home() {
                     <p className="font-im-fell">
                         ANUNCIANDO LAS BODAS DE ORO DE
                     </p>
-                    <p className="font-im-fell text-7xl text-luxor-gold-600">
+                    <p className="font-dancing text-7xl text-luxor-gold-600">
                         Lulú y Gil
                     </p>
                     <p className="font-im-fell">
