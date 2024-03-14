@@ -32,10 +32,10 @@ export default function Home() {
                     height={500}
                 />
                 <div className="flex flex-col text-center gap-5">
-                    <p className="font-im-fell text-luxor-gold-600">
+                    <p className="font-im-fell">
                         ANUNCIANDO LAS BODAS DE ORO DE
                     </p>
-                    <p className="font-im-fell text-7xl">
+                    <p className="font-im-fell text-7xl text-luxor-gold-600">
                         Lulú y Gil
                     </p>
                     <p className="font-im-fell">
