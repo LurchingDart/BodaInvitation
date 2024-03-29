@@ -265,6 +265,49 @@ export default function Home() {
                     Contamos con su presencia!
                 </p>
             </section>
+            <footer className="flex flex-col w-full items-center my-5">
+                <div className="flex gap-3">
+                    <p className="font-fira-code">
+                        Diseñado y desarrollado por
+                    </p>
+                    <a
+                        href="https://wa.me/524494917531"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-luxor-gold-600 font-fira-code font-semibold"
+                    >
+                        Luis Alférez
+                    </a>
+                </div>
+                <hr className="border-1 border-luxor-gold-600 w-3/4 my-2" />
+                <div className="flex gap-3">
+                    <a href="https://wa.me/524494917531" target="_blank" rel="noreferrer">
+                        <Image
+                            src="/whatsapp.svg"
+                            alt="Logo de WhatsApp"
+                            width={20}
+                            height={20}
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/LuisAlferez" target="_blank" rel="noreferrer">
+                        <Image
+                            src="/linkedin.svg"
+                            alt="Logo de LinkedIn"
+                            width={20}
+                            height={20}
+                        />
+                    </a>
+                    <a href="https://github.com/LurchingDart" target="_blank" rel="noreferrer">
+                        <Image
+                            src="/github.svg"
+                            alt="Logo de GitHub"
+                            width={20}
+                            height={20}
+                        />
+                    </a>
+
+                </div>
+            </footer>
         </main>
     );
 }
