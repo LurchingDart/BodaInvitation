@@ -1,4 +1,4 @@
-import { Inter, IM_Fell_English, Dancing_Script } from "next/font/google";
+import { Inter, IM_Fell_English, Dancing_Script, Fira_Code, Manrope } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,6 +17,18 @@ const dancing = Dancing_Script({
   subsets: ["latin"],
   display: "swap",
   variable: '--font-dancing',
+})
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  display: "swap",
+  variable: '--font-firaCode',
+})
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: '--font-manrope',
 })
 
 export const metadata = {
@@ -43,7 +55,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${imFell.variable} ${dancing.variable}`}>
+      <body className={`${inter.variable} ${imFell.variable} ${dancing.variable} ${firaCode.variable} ${manrope.variable}`}>
         {children}
       </body>
     </html>

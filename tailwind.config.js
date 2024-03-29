@@ -106,11 +106,13 @@ module.exports = {
       fontFamily: {
         'im-fell': ['var(--font-imFell)'],
         'dancing': ['var(--font-dancing)'],
+        'fira-code': ['var(--font-firaCode)'],
+        'manrope': ['var(--font-manrope)'],
       },
       keyframes: {
         flip: {
-          'from': { transform:'rotateX(0deg)', transformOrigin: '50% bottom ',},
-          'to':{transform: 'rotateX(180deg)', transformOrigin: '50% bottom ',}
+          'from': { transform: 'rotateX(0deg)', transformOrigin: '50% bottom ', },
+          'to': { transform: 'rotateX(180deg)', transformOrigin: '50% bottom ', }
         },
         "accordion-down": {
           from: { height: "0" },
@@ -125,7 +127,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        flip:'flip 1s cubic-bezier(0, 0, 0.2, 1) infinite'
+        flip: 'flip 1s cubic-bezier(0, 0, 0.2, 1) infinite'
       },
     },
   },
