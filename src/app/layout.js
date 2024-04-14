@@ -1,5 +1,6 @@
 import { Inter, IM_Fell_English, Dancing_Script, Fira_Code, Manrope } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
   subsets: ["latin"]
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} ${imFell.variable} ${dancing.variable} ${firaCode.variable} ${manrope.variable}`}>
         {children}
       </body>
+      <Analytics />
     </html>
   );
 }
